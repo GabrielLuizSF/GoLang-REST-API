@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: .dockerfile
+    image: github.com/GabrielLuizSF/GoLang-REST-API-db
+    container_name: GoLang-REST-API-db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "25432:5432"
+    environment:
+      POSTGRES_DB: books
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data/GoLang-REST-API
+    volumes:
+      - GoLang-REST-API:/var/lib/postgresql/data
+
+volumes:
+  GoLang-REST-API:
