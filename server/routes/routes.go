@@ -26,4 +26,5 @@ func ConfigRoutes(router *gin.Engine) *gin.Engine{
 	  
 	    }
 	}
+	return router
 }

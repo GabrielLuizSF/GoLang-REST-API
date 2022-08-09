@@ -18,10 +18,10 @@ func NewServer() Server{
 		server: gin.Default(),
 	}
 }
-func (serverInit *Server) ServerRun(){
+func (serverInit *Server) Run(){
 	router := routes.ConfigRoutes(serverInit.server)
 
 	log.Printf("Server runing at port :  %v",serverInit.port)
-    log.Fatal(router.ServerRun(":"+serverInit.port))
+    log.Fatal(router.Run(":"+serverInit.port))
 
 }

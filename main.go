@@ -8,6 +8,6 @@ func main(){
 	database.StartDB()
 	serverInit := server.NewServer()
 
-	serverInit.RunServer()
+	serverInit.Run()
 	
 }
