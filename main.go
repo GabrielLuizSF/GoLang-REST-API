@@ -1,13 +1,14 @@
 package main
 
-import (
-	"github.com/GabrielLuizSF/GoLang-REST-API/database"
-	"github.com/GabrielLuizSF/GoLang-REST-API/server"
-)
-func main(){
-	database.StartDB()
-	serverInit := server.NewServer()
+import(
 
-	serverInit.Run()
-	
+	"user_api-golang/server"
+)
+
+
+func main() {
+ server.StartServer();
+
 }
+
+
