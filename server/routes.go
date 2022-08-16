@@ -7,6 +7,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"user_api-golang/controllers"
 )
+
 func initaliseHandlers(router *mux.Router) {
 	router.HandleFunc("/api/users", controllers.GetAllUser).Methods("GET")
 	router.HandleFunc("/api/user/create", controllers.CreateUser).Methods("POST")
