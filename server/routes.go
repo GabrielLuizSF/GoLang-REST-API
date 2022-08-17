@@ -4,7 +4,7 @@ package server
 import (
 	
 	"github.com/gorilla/mux"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+      _ "github.com/jinzhu/gorm/dialects/mysql"
 	"user_api-golang/controllers"
 )
 
