@@ -7,7 +7,6 @@ import (
 	"strconv"
 	"user_api-golang/database"
 	"user_api-golang/models"
-
 	"github.com/gorilla/mux"
 )
 
