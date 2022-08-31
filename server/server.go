@@ -6,7 +6,6 @@ import (
         "user_api-golang/database"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/handlers"
-      _ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 
